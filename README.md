@@ -3,7 +3,9 @@ Data115
 
 HW11 Visualization
 ![image](https://user-images.githubusercontent.com/91580800/145515802-d91acffa-89aa-464f-a79f-561cb86030d1.png)
-Code: library(ggplot2)
+
+Code: 
+library(ggplot2)
 starbucks <- read.csv("Starbucks World Stats.csv")
 ggplot(starbucks, aes(x=Population, y=Starbucks.per.million.inhabitants, color=Numer.of.Starbucks)) + geom_point()
 *Note: The spelling error is from the orignal data source, not my own work. I fixed this later.*
@@ -16,7 +18,9 @@ Initially, I had made the visualization above in Homework Assignment 11 to attem
 
 Updated Visualization:
 ![image](https://user-images.githubusercontent.com/91580800/145515682-1cd60803-2091-49a4-8964-413f9ee27043.png)
-Code: library(ggplot2)
+
+Code: 
+library(ggplot2)
 starbucks <- read.csv("StarbucksWorldStats.csv")
 ggplot(starbuck, aes(x=Population, y=Number.of.Starbucks, color=Starbucks.per.million.inhabitants)) + geom_point() + ggtitle("Number of Starbucks per Million Inhabitants")
 This figure illustrates how many Starbucks exist per million inhabitants in 63 countries around the world. It is labeled with the number of Starbucks in that country on the y-axis, and the population along the x-axis, as well as colored by number of Starbucks per million inhabitants to show density. Overall, most countries have fewer than 15 Starbucks per million inhabitants, though the visual shows that there are some countries that have many more than that per million inhabitants, those countries being more mainstream and populated overall. China and India, for instance, have much higher populations than most other countries surveyed. And the United States accounts for the majority number of Starbucks overall.
